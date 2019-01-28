@@ -56,6 +56,7 @@ contract SupplyChain {
     {
         require (msg.sender == _address);
         _;
+        //
     }
  
     modifier paidEnough(uint _price) { require(msg.value >= _price); _;}
